@@ -122,13 +122,13 @@ public class PlayRoutine : MonoBehaviour
 
     public void TimeOut()
     {
-        _loseWindow.gameObject.SetActive(true);
-        _currentObjectUI.gameObject.SetActive(false);
+        LoseRoutine();
     }
 
     public void LoseRoutine()
     {
-
+        _loseWindow.gameObject.SetActive(true);
+        _currentObjectUI.gameObject.SetActive(false);
     }
 
     private void OnDestroy()
